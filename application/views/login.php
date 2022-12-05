@@ -8,9 +8,9 @@
         </div>
         <form action="" method="POST">
             <div class="mb-3">
-                <label for="email" class="form-label text-primary">Email</label>
-                <input type="text" class="form-control text-primary" id="email" name="email" placeholder="Email" value="<?=set_value('email')?>">
-                <?= form_error('email',"<small class='text-danger'>", "</small>")?>
+                <label for="username" class="form-label text-primary">username</label>
+                <input type="text" class="form-control text-primary" id="username" name="username" value="<?=set_value('username')?>">
+                <?= form_error('username',"<small class='text-danger'>", "</small>")?>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label text-primary">Password</label>

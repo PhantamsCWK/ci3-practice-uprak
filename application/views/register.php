@@ -13,11 +13,6 @@
                 <?= form_error('username',"<small class='text-danger'>", "</small>")?>
             </div>
             <div class="mb-2">
-                <label for="email" class="form-label text-primary">Email</label>
-                <input type="text" class="form-control text-primary" id="email" name="email" placeholder="Email" value="<?=set_value('email')?>">
-                <?= form_error('email',"<small class='text-danger'>", "</small>")?>
-            </div>
-            <div class="mb-2">
                 <label for="password" class="form-label text-primary">Password</label>
                 <input type="password" class="form-control text-primary" id="password" name="password" placeholder="">
                 <?= form_error('password',"<small class='text-danger'>", "</small>")?>

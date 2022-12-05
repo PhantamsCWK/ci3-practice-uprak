@@ -6,9 +6,10 @@ class Book extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('Book_model');
-        // $this->load->helper(['url','form']);
-        // $this->load->library('form_validation');
         
+        if (!$this->session->userdata('username')) {
+            redirect('login');
+        }
     }
 
     public function index()

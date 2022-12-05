@@ -5,26 +5,31 @@
                  <?= validation_errors()?>
             </div>
         <?php endif;?>
-            <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" name="title" id="title">
-            </div>
-            <div class="mb-3">
-                <label for="author" class="form-label">Author</label>
-                <input type="text" class="form-control" name="author" id="author">
-                <div class="invalid-feedback">
+            <div class="row g-3">
+                <div class="col-8">
+                    <label class="form-label">Nama</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="col-4">
+                    <label class="form-label">NIS</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="col-4">
+                    <label class="form-label">Kelas</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="col-8">
+                    <label class="form-label">Judul Buku</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Tanggal Peminjaman</label>
+                    <input type="date" class="form-control" >
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Tanggal Kembali</label>
+                    <input type="date" class="form-control" >
                 </div>
             </div>
-            <div class="mb-3">
-                <label for="genre" class="form-label">Genre</label>
-                <select class="form-select"  name="genre" id="genre">
-                    <option value="drama">Drama</option>
-                    <option value="action">Action</option>
-                    <option value="romance">Romance</option>
-                    <option value="horror">Horror</option>
-                    <option value="comedy">Comedy</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
